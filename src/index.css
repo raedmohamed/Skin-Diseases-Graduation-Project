@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --main-color: #285380;
+  --text-color: #131e3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+.react-slideshow-wrapper.slide .active {
+  overflow: hidden;
+}
+.react-slideshow-container + ul.indicators {
+  display: flex;
+  gap: 10px;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
+  width: 5px;
+  height: 5px;
+  border: 4px solid black;
+  background-color: white;
+}
+.react-slideshow-container .nav:last-of-type,
+.react-slideshow-container .default-nav:first-of-type {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.react-slideshow-container .nav:last-of-type:hover,
+.react-slideshow-container .nav:first-of-type:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 500px) {
+  .react-slideshow-container .nav:last-of-type,
+  .react-slideshow-container .default-nav:first-of-type {
+    width: 30px;
+    height: 30px;
+  }
+  .react-slideshow-container .nav:last-of-type svg,
+  .react-slideshow-container .default-nav:first-of-type svg {
+    width: 20px;
+    height: 20px;
+  }
+}
